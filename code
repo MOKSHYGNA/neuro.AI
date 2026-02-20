@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NeuroAI | Future Intelligence</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#0b0f1a;
+color:white;
+overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 80px;
+position:fixed;
+width:100%;
+background:rgba(0,0,0,0.7);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+nav h2{
+font-family:'Playfair Display',serif;
+color:#d4af37;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:400;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#d4af37;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0 100px;
+}
+
+.hero-text{
+max-width:600px;
+}
+
+.hero-text h1{
+font-size:60px;
+font-family:'Playfair Display',serif;
+color:#d4af37;
+}
+
+.hero-text p{
+margin:20px 0;
+font-size:18px;
+color:#ccc;
+}
+
+.hero-text button{
+padding:12px 30px;
+border:none;
+background:#d4af37;
+color:black;
+font-weight:600;
+cursor:pointer;
+transition:0.3s;
+}
+
+.hero-text button:hover{
+background:white;
+}
+
+.hero img{
+width:420px;
+animation:float 6s ease-in-out infinite;
+filter:drop-shadow(0 20px 40px rgba(255,215,0,0.3));
+border-radius:20px;
+}
+
+@keyframes float{
+0%{transform:translateY(0px);}
+50%{transform:translateY(-20px);}
+100%{transform:translateY(0px);}
+}
+
+/* SECTION STYLE */
+
+section{
+padding:100px 80px;
+text-align:center;
+}
+
+section h2{
+font-family:'Playfair Display',serif;
+font-size:40px;
+margin-bottom:40px;
+color:#d4af37;
+}
+
+/* CARDS */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:rgba(255,255,255,0.05);
+padding:30px;
+border-radius:15px;
+backdrop-filter:blur(10px);
+transition:0.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 20px 40px rgba(212,175,55,0.3);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#d4af37;
+}
+
+/* CONTACT */
+
+.contact input, .contact textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+background:rgba(255,255,255,0.05);
+border:none;
+color:white;
+}
+
+.contact button{
+padding:12px 25px;
+background:#d4af37;
+border:none;
+cursor:pointer;
+font-weight:bold;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:black;
+color:#888;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+<h2>NeuroAI</h2>
+<ul>
+<li><a href="#intro">Introduction</a></li>
+<li><a href="#types">Types</a></li>
+<li><a href="#testimonials">Testimonials</a></li>
+<li><a href="#events">Events</a></li>
+<li><a href="#research">Research</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero" id="intro">
+<div class="hero-text">
+<h1>Neuro AI Revolution</h1>
+<p>Exploring the fusion of neuroscience and artificial intelligence to build intelligent systems that think, learn and evolve like the human brain.</p>
+<button>Explore Research</button>
+</div>
+
+<img src="https://images.unsplash.com/photo-1535378620166-273708d44e4c?q=80&w=800&auto=format&fit=crop">
+
+</div>
+
+<!-- TYPES -->
+<section id="types">
+<h2>Types of Neuro AI</h2>
+<div class="grid">
+<div class="card">
+<h3>Brain-Computer Interfaces</h3>
+<p>Direct communication between brain and machines.</p>
+</div>
+<div class="card">
+<h3>Neural Networks</h3>
+<p>Deep learning models inspired by biological neurons.</p>
+</div>
+<div class="card">
+<h3>Cognitive AI</h3>
+<p>Systems designed to simulate human reasoning.</p>
+</div>
+</div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+<h2>Testimonials</h2>
+<div class="grid">
+<div class="card">
+<p>"NeuroAI research is redefining future intelligence."</p>
+<h3>- AI Scientist</h3>
+</div>
+<div class="card">
+<p>"A groundbreaking intersection of neuroscience and AI."</p>
+<h3>- Tech Researcher</h3>
+</div>
+</div>
+</section>
+
+<!-- EVENTS -->
+<section id="events">
+<h2>Events</h2>
+<div class="grid">
+<div class="card">
+<h3>NeuroTech 2026</h3>
+<p>Global conference on brain-inspired computing.</p>
+</div>
+<div class="card">
+<h3>AI Brain Hackathon</h3>
+<p>48-hour innovation challenge on neural AI systems.</p>
+</div>
+</div>
+</section>
+
+<!-- RESEARCH -->
+<section id="research">
+<h2>Research</h2>
+<div class="grid">
+<div class="card">
+<h3>Neuroplastic AI</h3>
+<p>Adaptive algorithms mimicking brain plasticity.</p>
+</div>
+<div class="card">
+<h3>Quantum Neural Models</h3>
+<p>Exploring quantum mechanics in neural computation.</p>
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+<h2>Contact Us</h2>
+<input type="text" placeholder="Your Name">
+<input type="email" placeholder="Your Email">
+<textarea rows="5" placeholder="Your Message"></textarea>
+<button>Send Message</button>
+</section>
+
+<footer>
+© 2026 NeuroAI Research | Designed with Classic 3D Effect
+</footer>
+
+</body>
+</html>
